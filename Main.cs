@@ -56,7 +56,7 @@ namespace Renci.SshNet
 				Console.WriteLine("Connecting to MySQL...");
 				mysqlConn.Open();
 				Console.WriteLine ("MySql database connection activated");
-				string query = "INSERT INTO database1(dataSequence) VALUES('AGTTTTTTC')"; //Create desired query 
+				string query = "INSERT INTO humanChromosomes(dataSequence) VALUES('AGTTTTTTC')"; //Create desired query 
 				MySqlCommand cmd = new MySqlCommand(query, mysqlConn);
 				cmd.ExecuteNonQuery();
 				Console.WriteLine("Query Successful");
